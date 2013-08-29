@@ -1,4 +1,4 @@
-$LOAD_PATH.unshift File.expand_path("../lib", __FILE__)
+$:.push File.expand_path("../lib", __FILE__)
 require "google_tz/version"
 
 Gem::Specification.new do |s|
@@ -17,4 +17,5 @@ Gem::Specification.new do |s|
   s.require_paths = ['lib']
 
   gem.add_development_dependency 'rspec'
+  
 end
