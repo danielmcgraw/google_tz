@@ -10,7 +10,8 @@ Gem::Specification.new do |s|
   s.authors       = ["Daniel McGraw"]
   s.email         = 'dan.j.mcgraw@gmail.com'
   s.files         = `git ls-files`.split("\n")
-  s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
+  s.test_files    = `git ls-files -- spec/*`.split("\n")
+  s.executables   = `git ls-files -- bin/*`.split("\n")
   s.homepage      = 'http://github.com/danielmcgraw/google_tz'
   s.license       = 'MIT'
   s.require_paths = ['lib']
