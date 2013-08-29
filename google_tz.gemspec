@@ -11,11 +11,12 @@ Gem::Specification.new do |s|
   s.email         = 'dan.j.mcgraw@gmail.com'
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- spec/*`.split("\n")
-  s.executables   = `git ls-files -- bin/*`.split("\n")
+  s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.homepage      = 'http://github.com/danielmcgraw/google_tz'
   s.license       = 'MIT'
   s.require_paths = ['lib']
 
-  gem.add_development_dependency 'rspec'
-  
+  s.add_development_dependency 'rake'
+  s.add_development_dependency 'rspec'
+
 end

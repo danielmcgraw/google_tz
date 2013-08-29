@@ -1,10 +1,8 @@
+require 'google_tz/query'
+
 module GoogleTZ
-  class << self
-  	def lookup(lat, lng, timestamp)
-      q = Query.new(lat, lng, timestamp)
-      q.lookup
-    end
+  def self.lookup(lat, lng, timestamp)
+    q = Query.new(lat, lng, timestamp)
+    q.lookup
   end
 end
-
-require 'google_tz/query'

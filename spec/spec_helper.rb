@@ -1,1 +1,1 @@
-gem 'rspec'
+require 'google_tz'
