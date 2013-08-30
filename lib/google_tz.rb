@@ -1,8 +1,7 @@
 require 'google_tz/query'
 
-module GoogleTZ
-  def self.lookup(lat, lng, timestamp)
-    q = Query.new(lat, lng, timestamp)
-    q.lookup
+class GoogleTZ
+  def self.lookup(lat, lng, opts={})
+    GoogleTZAPI::Query.new(lat, lng, opts).lookup
   end
 end

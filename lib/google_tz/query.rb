@@ -2,12 +2,14 @@ require 'net/http'
 require 'uri'
 require 'openssl'
 
-module GoogleTZ
+module GoogleTZAPI
   class Query
-    def initialize(lat, lng, timestamp)
-      @lat=lat
-      @lng=lng
-      @timestamp=timestamp
+    def initialize(lat, lng, opts)
+      @lat = lat
+      @lng = lng
+      @timestamp = opts[:timestamp] || Time.now.to_i
+      @sensor = opts[:sensor] || false
+      @language = opts[:language] || "en"
     end
 
     def lookup
@@ -18,7 +20,7 @@ module GoogleTZ
     private
     def build_uri
       uri = URI.parse("https://maps.googleapis.com/maps/api/timezone/json")
-      args = { :location => "#{@lat},#{@lng}", timestamp: @timestamp, sensor: false }
+      args = { :location => "#{@lat},#{@lng}", timestamp: @timestamp, sensor: @sensor, language: @language }
       uri.query = URI.encode_www_form(args)
       uri
     end
