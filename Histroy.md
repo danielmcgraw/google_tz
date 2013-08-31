@@ -1,8 +1,13 @@
 ## HEAD
 
+## 0.2.1 / 2013-08-30
+
+### Development Fixes
+  * move spec to correct folder
+
 ## 0.2.0 / 2013-08-30
 
-### Major ENhancements
+### Major Enhancements
   * Make timestamp optional
   * Add sensor and language optional arguments
 
