@@ -1,3 +1,3 @@
-module GoogleTZ
+module GoogleTZAPI
   VERSION = '0.2.0'
  end
