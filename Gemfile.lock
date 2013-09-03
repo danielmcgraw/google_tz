@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    google_tz (0.2.0)
+    google_tz (0.3.0)
 
 GEM
   remote: http://rubygems.org/

@@ -1,5 +1,10 @@
 ## HEAD
 
+## 0.3.0 / 2013-09-02
+
+### Major Enhancements
+  * Add a Response object
+
 ## 0.2.1 / 2013-08-30
 
 ### Development Fixes
