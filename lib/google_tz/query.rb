@@ -14,7 +14,6 @@ module GoogleTZAPI
 
     def lookup
       response = make_request(build_uri)
-      # GoogleTZResponse.new(response.body)
       response.body
     end
 
