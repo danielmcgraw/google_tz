@@ -1,5 +1,11 @@
 ## HEAD
 
+## 0.3.1 / 2013-09-03
+
+### Development Fixes
+  * Stub lookup calls in specs
+  * Add response documentation
+
 ## 0.3.0 / 2013-09-02
 
 ### Major Enhancements
