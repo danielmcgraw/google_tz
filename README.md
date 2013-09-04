@@ -6,13 +6,19 @@
 	gem install google_tz
 
 ## Usage	
+
+### Require
 	require 'google_tz'
+
+### Lookup
 
 #### Lookup timezone information on a location using latitude and longitude.
 	GoogleTZ.lookup(39.7392, -104.9847)
 
 #### Lookup timezone information on a location using latitude, longitude, timestamp, and language
 	GoogleTZ.lookup(39.7392, -104.9847, timestamp: 1377891332, language: "es")
+
+### Response
  
 #### Seeing if the Google API call was a success.
  	resp = GoogleTZ.lookup(39.7392, -104.9847)
