@@ -1,5 +1,10 @@
 ## HEAD
 
+## 0.3.2 / 2013-09-04
+
+### Development Fixes
+  * Fix up gemspec summary and description
+
 ## 0.3.1 / 2013-09-03
 
 ### Development Fixes
